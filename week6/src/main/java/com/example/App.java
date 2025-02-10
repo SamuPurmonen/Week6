@@ -61,7 +61,7 @@ public class App
                     //luo rumpuolio
                 }
                 else{
-                    System.out.println("Nyt meni vituiks...");
+                    System.out.println("Virheellinen soitinvalinta.");
                 }
                 
                 break;
