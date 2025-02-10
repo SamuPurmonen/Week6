@@ -38,9 +38,8 @@ public class Instrument {
         // miksi tässä pitäisi edes palauttaa mitään kun se voi kertoa ne yksityiskohdat tässä
         }
 
-    public void tune(){
 
+    
 
-    }
 
 }
