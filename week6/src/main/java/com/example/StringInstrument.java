@@ -8,11 +8,24 @@ public class StringInstrument extends Instrument{
         super(manufacturer, price);
         this.numberOfStrings = numberOfStrings;
     }
+
+    public StringInstrument(){
+
+    }
     //guitar ja Violin periytyvät tästä luokata
 
     public void tune(){
-        //tulostaa X soittimesta viritettiin Y kieltä
-        //eli tarkastaa olion kielenten määrän
+        for (int i = 0; i < Instruments.size(); i++){
+            
+            if (Instruments.get(i) instanceof Guitar){
+
+                System.out.println(Instruments.get(i).manufacturer + " soittimesta viritettiin 6 kieltä!");
+            }
+            else if (Instruments.get(i) instanceof Violin){
+
+                System.out.println(Instruments.get(i).manufacturer + " soittimesta viritettiin 4 kieltä!");
+            }
+        }
     }
 
     

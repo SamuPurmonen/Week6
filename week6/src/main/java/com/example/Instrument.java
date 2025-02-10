@@ -7,7 +7,7 @@ public class Instrument {
     //drum ja StringInstrument periytyy tästä luokasta
     protected String manufacturer;
     protected int price;
-    ArrayList<Instrument> Instruments = new ArrayList<>();
+    protected static ArrayList<Instrument> Instruments = new ArrayList<>();
 
 
     
@@ -16,15 +16,31 @@ public class Instrument {
         this.price = price;
 
         Instruments.add(this);
+        System.out.println("Soitin lisätty listaan!");
+    }
+
+    public Instrument(){
+
     }
 
     public String getDetails(){
-        for (int i = 0; i < Instruments.size(); i++){
-            System.out.println("Valmistaja " + Instruments.get(i).manufacturer +", Hinta " + Instruments.get(i).price);
-        }
         
-        return "Valmistaja " + manufacturer +", Hinta " + price;
+        if (Instruments.isEmpty()){
+            System.out.println("Ei lisättyjä soittimia.");
+        }
+        else{
+        
+            for (int i = 0; i < Instruments.size(); i++){
+                System.out.println("Valmistaja: " + Instruments.get(i).manufacturer +", Hinta: " + Instruments.get(i).price);
+            }
+        }
+        return "Valmistaja " + this.manufacturer +", Hinta " + this.price+"e";
         // miksi tässä pitäisi edes palauttaa mitään kun se voi kertoa ne yksityiskohdat tässä
+        }
+
+    public void tune(){
+
+
     }
 
 }

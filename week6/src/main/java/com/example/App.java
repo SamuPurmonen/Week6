@@ -9,7 +9,9 @@ public class App
         
 
         Scanner sc = new Scanner(System.in);
-    
+        
+        
+        
         boolean exit = false;
 
          while (!exit){
@@ -42,16 +44,16 @@ public class App
                 //jostain syystä StringInsturment haluaa myös kielten määrän määrittelyyn vaikka se tehdään erikseen jo Guitar ja Violin
                 //.javassa joten laitetaan placegholderiksi null;
 
-                int numberOfStrings = 0;
+                
                 
                 // anna halutulle oliolle tiedot
                 //if tai case loop ja tarkista numerolla mikä olio luodaan
                 if (case1Input == 1){
                     //luo kiraraolio
-                    Guitar guitar = new Guitar(manufacturer, price, numberOfStrings);
+                    Guitar guitar = new Guitar(manufacturer, price, 6);
                 }
                 else if (case1Input == 2){
-                    Violin violin = new Violin(manufacturer, price, numberOfStrings);
+                    Violin violin = new Violin(manufacturer, price, 4);
                     //luo viuluolio
                 }
                 else if (case1Input == 3){
@@ -61,19 +63,24 @@ public class App
                 else{
                     System.out.println("Nyt meni vituiks...");
                 }
-                System.out.println("Soitin lisätty listaan!");
+                
                 break;
 
                 case 2:
                 //listaa soittimet
-                
+                Instrument instrument = new Instrument();
+                instrument.getDetails();
                 break;
 
                 case 3:
-
+                StringInstrument stringInstrument = new StringInstrument();
+                stringInstrument.tune();
                 break;
 
                 case 4:
+                //soita rumpuja
+                Drum drum = new Drum();
+                drum.playBeat();
                 break;
 
                 case 0:
