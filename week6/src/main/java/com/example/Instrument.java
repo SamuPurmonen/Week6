@@ -31,7 +31,7 @@ public class Instrument {
                 System.out.println("Valmistaja: " + Instruments.get(i).manufacturer + ", Hinta: " + Instruments.get(i).price + "e");
             }
         }
-        return "tekstiä";
+        return "Valmistaja: " + Instruments.get(i).manufacturer + ", Hinta: " + Instruments.get(i).price + "e";
         // miksi tässä pitäisi edes palauttaa mitään kun se voi kertoa ne yksityiskohdat tässä
     }
 
