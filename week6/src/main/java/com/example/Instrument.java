@@ -33,8 +33,8 @@ public class Instrument {
             }
         }
         
-        return manufacturer;
-        // miksi tässä pitäisi edes palauttaa mitään kun se voi kertoa ne yksityiskohdat tässä
+        return "Valmistaja: " + manufacturer + ", Hinta: " + price + "e";
+        
     }
 
 }
