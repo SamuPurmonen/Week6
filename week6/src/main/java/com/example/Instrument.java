@@ -31,10 +31,10 @@ public class Instrument {
         else{
         
             for (int i = 0; i < Instruments.size(); i++){
-                System.out.println("Valmistaja: " + Instruments.get(i).manufacturer +", Hinta: " + Instruments.get(i).price);
+                System.out.println("Valmistaja: " + Instruments.get(i).manufacturer +", Hinta: " + Instruments.get(i).price + "e");
             }
         }
-        return "Valmistaja " + this.manufacturer +", Hinta " + this.price+"e";
+        return "tekstiä";
         // miksi tässä pitäisi edes palauttaa mitään kun se voi kertoa ne yksityiskohdat tässä
         }
 
