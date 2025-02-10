@@ -33,7 +33,7 @@ public class Instrument {
             }
         }
         
-        return "Valmistaja: " + Instruments.get(Instruments.size()-1).manufacturer + ", Hinta: " + Instruments.get(Instruments.size()-1).price + "e";
+        return manufacturer;
         // miksi tässä pitäisi edes palauttaa mitään kun se voi kertoa ne yksityiskohdat tässä
     }
 
