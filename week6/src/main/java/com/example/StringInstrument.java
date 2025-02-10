@@ -25,6 +25,9 @@ public class StringInstrument extends Instrument {
 
                 System.out.println(Instruments.get(i).manufacturer + " soittimesta viritettiin 4 kieltä!");
             }
+            else if (Instruments.get(i) instanceof StringInstrument) {
+                System.out.println(Instruments.get(i).manufacturer + " soittimesta viritettiin"+ this.numberOfStrings+ "kieltä!");
+            }
         }
     }
 
