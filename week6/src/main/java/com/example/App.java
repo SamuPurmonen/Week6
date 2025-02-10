@@ -44,9 +44,9 @@ public class App {
                     //if tai case loop ja tarkista numerolla mikä olio luodaan
                     if (case1Input == 1) {
                         //luo kiraraolio
-                        Guitar guitar = new Guitar(manufacturer, price, 6);
+                        Guitar guitar = new Guitar(manufacturer, price);
                     } else if (case1Input == 2) {
-                        Violin violin = new Violin(manufacturer, price, 4);
+                        Violin violin = new Violin(manufacturer, price);
                         //luo viuluolio
                     } else if (case1Input == 3) {
                         Drum drum = new Drum(manufacturer, price);
