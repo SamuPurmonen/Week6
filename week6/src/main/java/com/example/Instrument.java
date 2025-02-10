@@ -33,7 +33,7 @@ public class Instrument {
             }
         }
         
-        return "Valmistaja: " + manufacturer + ", Hinta: " + price + "e";
+        return "Valmistaja: " + this.manufacturer + ", Hinta: " + this.price + "e";
         
     }
 
